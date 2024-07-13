@@ -16,6 +16,7 @@ header {
 header img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 section {
@@ -23,11 +24,12 @@ section {
     padding: 20px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #1f6feb;
+    text-align: center;
 }
 
 h3 {
@@ -35,22 +37,22 @@ h3 {
     margin-top: 20px;
 }
 
-.tech-icons img, .experience-lists ul {
-    margin: 10px 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tech-icons img {
     height: 40px;
     width: auto;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 ul {
     list-style: none;
     line-height: 1.6;
+    padding-left: 0;
 }
 
 footer {
@@ -63,14 +65,14 @@ footer {
     width: 100%;
 }
 
-#github-stats, #technologies {
-    text-align: center
-}
-
 #about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0; 
+    padding: 0;
+}
+
+#github-stats {
+    text-align: center;
 }
