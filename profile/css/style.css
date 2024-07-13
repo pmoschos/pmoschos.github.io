@@ -121,11 +121,11 @@ footer {
     .tech-icons img {
         margin: 5px 0;
     }
+
     .stats-container {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 /* Normal screens styles */
