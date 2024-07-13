@@ -75,6 +75,35 @@ footer {
 
 #github-stats {
     text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.stats-image img,
+.trophy-link img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trophy-link a {
+    text-decoration: none;
+}
+
+.trophy-link a:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 /* Mobile styles */
@@ -91,5 +120,46 @@ footer {
 
     .tech-icons img {
         margin: 5px 0;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Normal screens styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tech-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-icons img {
+        margin: 5px;
+    }
+}
+
+/* Larger screens styles */
+@media (min-width: 1025px) {
+    .stats-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .tech-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-icons img {
+        margin: 10px;
     }
 }
