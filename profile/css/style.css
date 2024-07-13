@@ -121,45 +121,12 @@ footer {
     .tech-icons img {
         margin: 5px 0;
     }
-
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Normal screens styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tech-icons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tech-icons img {
-        margin: 5px;
-    }
 }
 
 /* Larger screens styles */
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
     .stats-container {
         flex-direction: row;
         justify-content: space-around;
-    }
-
-    .tech-icons {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tech-icons img {
-        margin: 10px;
     }
 }
