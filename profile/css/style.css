@@ -77,24 +77,6 @@ footer {
     text-align: center;
 }
 
-.stats-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.stats-image img,
-.trophy-link img {
-    max-width: 100%;
-    height: auto;
-}
-
-.stats-container img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Mobile styles */
 @media (max-width: 768px) {
     section {
@@ -109,13 +91,5 @@ footer {
 
     .tech-icons img {
         margin: 5px 0;
-    }
-}
-
-/* Larger screens styles */
-@media (min-width: 768px) {
-    .stats-container {
-        flex-direction: row;
-        justify-content: space-around;
     }
 }
